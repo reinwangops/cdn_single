@@ -24,8 +24,16 @@ fi
 #rollbackneed && update
 cd $PRD_PATH
 
-rm -rf bk-front
-\mv -f front bk-front
+rm -rf bk-assets
+\mv -f assets bk-assets
 unzip $PKG_NAME
 \mv -f $SRC_NAME front
-rm -rf  front/index.html
+rm -rf  front//index.html
+mv front/assets $PRD_PATH
+
+#rm -rf bk-front
+#\mv -f front bk-front
+#unzip $PKG_NAME
+#\mv -f $SRC_NAME front
+#rm -rf  front/index.html
+
