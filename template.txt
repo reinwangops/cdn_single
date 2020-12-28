@@ -2,3 +2,4 @@
 location ^~ /replace_prod_cdn {
 alias /home/nginx/web/replace/;
 }
+}
